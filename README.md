@@ -2,25 +2,22 @@
 
 My PyTorch implementation of the inpainting method described in the paper [Deep Image Prior by Ulyanov et al.](https://dmitryulyanov.github.io/deep_image_prior) (Network architectures are described in the supplementary material of that paper). This paper is particularly interesting because it shows that convolutional neural networks are a useful prior for natural images, even without any training on other images.
 
-Masked image            |  Output during learning | Finished output
+Masked image            |  Output during training | Finished output
 :-------------------------:|:-------------------------:|:-------------------------:
 ![](examples/eisbaer_small_masked.jpg)  |  ![](outputs/eisbaer.gif) | ![](outputs/eisbaer_inpainted.jpg)
-
-Masked image            |  Output during learning | Finished output
-:-------------------------:|:-------------------------:|:-------------------------:
 ![](examples/hase2_small_masked.jpg)  |  ![](outputs/hase.gif) | ![](outputs/hase_inpainted.jpg)
 
 ## Requirements
 
 - Python3
 - PyTorch
-- torchvision
-- PILlow
-- numpy
+- Torchvision
+- Pillow
+- NumPy
 
 ## Usage
 
-Example usage:
+Minimal example:
 
 ```
 python3 inpaint.py examples/eisbaer_small.jpg examples/eisbaer_small_mask.jpg -o examples/eisbaer_inpainted.jpg
@@ -61,8 +58,8 @@ optional arguments:
 
 ```
 
-####Example image licenses
+## Example image licenses
 
 Polar bear image (Eisbaer): CC-by-sa, Author: Mbz1, https://commons.wikimedia.org/wiki/File:Polar_bear_arctic.JPG
 
-Rabbit image (Hase): Public domain, Author:U.S. Fish and Wildlife Service, https://commons.wikimedia.org/wiki/File:New_England_cottontail.jpg
+Rabbit image (Hase): Public domain, Author: U.S. Fish and Wildlife Service, https://commons.wikimedia.org/wiki/File:New_England_cottontail.jpg
