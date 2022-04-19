@@ -1,4 +1,4 @@
-# PyTorch UNet
+# Deep Image Prior
 
 My PyTorch implementation of the inpainting method described in the paper [Deep Image Prior by Ulyanov et al.](https://dmitryulyanov.github.io/deep_image_prior) (Network architectures are described in the supplementary material of that paper). This paper is particularly interesting because it shows that convolutional neural networks are a useful prior for natural images, even without any training on other images.
 
